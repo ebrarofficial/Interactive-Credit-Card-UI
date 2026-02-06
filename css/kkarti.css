@@ -1,0 +1,241 @@
+body{
+    background-color: rgb(2, 7, 5);
+}
+
+#anaKKarti, #anaKKarti *{
+    top:auto;
+    left:auto;
+}
+
+#anaKKarti{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(4, 14, 10, 0.8);
+}
+
+#anaKKarti #kart{
+    width: 330px;
+    height: 200px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    perspective: 300px;
+}
+
+#anaKKarti #kart #kart_ici{
+    width: 100%;
+    height: 100%;
+    background-image: url("../pictures/kkarti.webp");
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+
+    transform-style:preserve-3d;
+    transition: all 0.6s ease-in-out;
+}
+
+
+#anaKKarti #kart #kart_ici #kon, 
+#anaKKarti #kart #kart_ici #karka{
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    overflow: hidden;
+
+}
+
+#anaKKarti #kart #kart_ici #karka{
+    transform: rotateY(180deg);
+}
+
+.kartDon {
+    transform: rotateY(180deg);
+}
+
+
+#anaKKarti #kart #kart_ici #kon #kno{
+    display: flex;
+    width: 82%;
+    justify-content: space-around;
+    margin: 64px 20px auto 20px;
+    padding: 10px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+}
+
+#anaKKarti #kart #kart_ici #kon #kno .digit{
+
+    font:16pt arial;
+    color:white;
+    font-weight: bold;
+    width: 15px;
+    text-shadow: 0px 0px 5px black;
+}
+
+#anaKKarti #kart #kart_ici #kon #kad{
+    width: 200px;
+    display: flex;
+    
+}
+
+
+#anaKKarti #kart #kart_ici #kon #ktar{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#anaKKarti #kart #kart_ici  #altSatir{
+    font:12pt arial;
+    color:white;
+    font-weight: bold;
+    width: 86%;
+    text-shadow: 0px 0px 5px black;
+    padding:10px;
+    transform:translate(10px, 30px);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#anaKKarti #kart #kart_ici #karka #bant{
+    width: 100%;
+    height: 50px;
+    background-color: #313131;
+    transform:translateY(40px);
+    position: absolute;
+}
+
+#anaKKarti #kart #kart_ici #karka #cvvMetin{
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    transform:translateY(100px);
+    position: absolute;
+    right: 10px;
+    color:black;
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    padding-right: 20px;
+
+}
+
+
+.yokOl{
+    margin-top: -100px!important;
+}
+
+
+.varOl{
+    margin-top: 100px!important;
+}
+
+#anaKKarti #kart #kart_ici #kon #kno .digit span{
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    transition: all 0.5s ease-out;
+}
+
+
+#anaKKarti #kart #kart_ici #kon .isaretci{
+    width: 300px;
+    height:30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: absolute;
+    margin: 0px auto;
+    transform: translate(-100px,-100px );
+    transition: all 0.5s ease-in-out;
+}
+
+.knoIsaretci{
+    transform: translate(13px,70px)!important;
+}
+
+.kadIsaretci{
+    transform: translate(4px,140px)!important;
+    width:225px!important;
+}
+
+
+.kTarihIsaretci{
+    transform: translate(232px,140px)!important;
+    width:88px!important;
+}
+
+#anaKKarti #kform{
+    width:400px;
+    height: auto;
+
+    background-color: rgb(11, 22, 19);
+    display: block;
+    margin-top:30px ;
+    padding:230px 30px 100px 30px;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(46, 218, 160, 0.15); 
+    border: 1px solid #1c3d32;
+}
+
+#anaKKarti #kform .fsatir{
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 25px;
+    transform: translateX(40px);
+    justify-content:space-between ;
+}
+
+#anaKKarti #kform .fsatir label{
+    font:12pt tahoma;
+    font-weight: bold;
+    color:rgb(138, 251, 228);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#anaKKarti #kform .fsatir input,
+#anaKKarti #kform .fsatir select{
+    font: 18pt arial;
+    font-weight: 400;
+    color: rgb(8, 36, 27);
+    border-radius: 15px 5px 15px 5px;
+    padding: 3px 8px;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    background-color: rgb(240, 252, 249);
+}
+
+#anaKKarti #kform .fsatir input:hover, 
+#anaKKarti #kform .fsatir input:focus,
+#anaKKarti #kform .fsatir select:hover, 
+#anaKKarti #kform .fsatir select:focus{
+    box-shadow: 0px 0px 10px #4fffa0; 
+    outline: none;
+}
+
+#anaKKarti #kform .fsatir #fcvv{
+    width: 60px;
+}
+
+#anaKKarti #kform .fsatir #fayyil{
+    width: 200px;
+}
+#anaKKarti #kform .fsatir #fayyil select{
+    width: 70px;
+}
+
+
